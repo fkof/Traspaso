@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+conexion
+</name>
+</assembly>
+<members>
+<member name="T:conexion.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:conexion.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:conexion.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:conexion.My.Resources.Resources.loading">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:conexion.ClsProcesos.llenaDataSet(System.String,System.String)">
+ <summary>
+ regresa un data table
+ </summary>
+ <param name="query"> consulta en la base de datos</param>
+ <param name="bd">FB si es para bd Firebird</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.ClsProcesos.ejecutaQuery(System.String)">
+ <summary>
+ Ejecuta consulta simple (insert, update, delete)
+ </summary>
+ <param name="query">Cadena </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.ClsEncFactura.validafactura(System.String,System.String,System.String)">
+ <summary>
+ Valida la factua que no se encuentre en el casa
+ </summary>
+ <param name="Referencia">Referencia del casa</param>
+ <param name="proveedor">Clave del proveedor del casa</param>
+ <param name="NoFactura">Numero de factura</param>
+ <returns>si regresa un true es que NO existe la factura</returns>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.ClsEncFactura.creafactura(conexion.ClsEncFactura)">
+ <summary>
+ Crea El Registro del Encabezado de La Factura
+ </summary>
+ <param name="objEnfac">Encabezado de la Factura (objeto)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.ClsEncFactura.creafacturarem(conexion.ClsEncFactura)">
+ <summary>
+ Crea factura de remesas
+ </summary>
+ <param name="objEnfact"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.Form1.creaseries(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ CREA REGISTROS DE SERIES EN CASA
+ </summary>
+ <param name="consecfatur">COSECUTIVO DE LA FACTURA</param>
+ <param name="consparte">CONSECUTIVO DE PARTIDA</param>
+ <param name="num_par">NUMERO DE PARTE QUE SE LE ASIGNARA MARCA MODELO NOSERIE</param>
+ <remarks></remarks>
+</member>
+<member name="M:conexion.Form1.insidepar(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Inserta la partida en las tablas del CASA
+ </summary>
+ <param name="consecfatur">Consecutivo de Factura</param>
+ <param name="consparte">No de parte de la partida</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

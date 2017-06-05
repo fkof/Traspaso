@@ -1,0 +1,511 @@
+
+2016-11-08 12:56:20,099 | INFO  | Principal.vb | Inicio de proceso....    08/11/2016 12:56:20 p. m. - 
+2016-11-08 12:56:25,749 | ERROR | Principal.vb | No hay ninguna fila en la posición 0. - 
+2016-11-08 12:56:27,693 | INFO  | Principal.vb | Borrado..... - 
+2016-11-08 12:56:30,529 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:33:54,652 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:33:54 a. m. - 
+2016-11-17 09:38:58,244 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:39:18,284 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:39:18 a. m. - 
+2016-11-17 09:40:33,072 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:40:40,386 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:40:40 a. m. - 
+2016-11-17 09:48:35,335 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:48:43,601 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:48:43 a. m. - 
+2016-11-17 09:49:21,408 | INFO  | Principal.vb | Insercion Factura con el ID: 9041 - 
+2016-11-17 09:51:15,868 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:51:24,978 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:51:24 a. m. - 
+2016-11-17 09:52:44,188 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 09:52:51,705 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 09:52:51 a. m. - 
+2016-11-17 09:53:06,993 | INFO  | Principal.vb | Insercion Factura con el ID: 9041 - 
+2016-11-17 09:53:21,386 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:53:31,819 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:53:44,205 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:53:59,425 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:53:59,458 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:53:59,469 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:54:00,716 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:54:01,375 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:54:01,376 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:54:01,398 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:54:30,610 | INFO  | Principal.vb | Insercion Factura con el ID: 9042 - 
+2016-11-17 09:54:31,974 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:54:31,984 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:54:32,004 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:54:34,814 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:54:34,921 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:54:34,975 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:54:38,484 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:54:38,633 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:54:38,633 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:54:38,634 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:54:39,333 | INFO  | Principal.vb | Insercion Factura con el ID: 9043 - 
+2016-11-17 09:54:40,219 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:54:40,337 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:54:40,359 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:54:41,405 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:54:41,420 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:54:41,482 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:54:42,263 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:54:42,625 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:54:42,625 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:54:42,626 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:54:43,310 | INFO  | Principal.vb | Insercion Factura con el ID: 9044 - 
+2016-11-17 09:54:44,091 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:54:44,118 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:54:44,150 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:54:44,931 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:54:44,960 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:54:44,969 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:54:45,618 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:54:45,749 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:54:45,750 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:54:45,751 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:54:46,280 | INFO  | Principal.vb | Insercion Factura con el ID: 9045 - 
+2016-11-17 09:54:47,068 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:54:47,077 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:54:47,100 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:54:50,343 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:54:50,371 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:54:50,381 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:54:51,207 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:54:51,319 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:54:51,320 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:54:51,321 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:54:52,169 | INFO  | Principal.vb | Insercion Factura con el ID: 9067 - 
+2016-11-17 09:54:52,976 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:54:53,039 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:54:53,079 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:54:54,077 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:54:54,086 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:54:54,095 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:55:17,738 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:55:17,837 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:55:17,838 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:55:17,839 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:55:20,345 | INFO  | Principal.vb | Insercion Factura con el ID: 9068 - 
+2016-11-17 09:55:21,169 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:55:21,178 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:55:21,206 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:55:21,937 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:55:21,948 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:55:21,957 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:55:22,677 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:55:22,773 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:55:22,773 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:55:22,774 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:55:23,218 | INFO  | Principal.vb | Insercion Factura con el ID: 9069 - 
+2016-11-17 09:55:23,954 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:55:23,994 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:55:24,021 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:55:24,839 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:55:24,891 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:55:24,904 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:55:25,502 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:55:25,578 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:55:25,580 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:55:25,580 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:55:35,938 | INFO  | Principal.vb | Insercion Factura con el ID: 9071 - 
+2016-11-17 09:55:42,893 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:55:42,905 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:55:42,931 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:12,741 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:12,783 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:12,794 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:20,644 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:20,744 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:20,744 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:20,745 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:21,818 | INFO  | Principal.vb | Insercion Factura con el ID: 9072 - 
+2016-11-17 09:56:22,602 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:22,809 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:22,876 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:24,067 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:24,196 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:24,214 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:26,816 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:26,912 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:26,913 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:26,914 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:27,957 | INFO  | Principal.vb | Insercion Factura con el ID: 9073 - 
+2016-11-17 09:56:28,720 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:28,758 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:28,781 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:29,647 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:29,679 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:29,689 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:30,312 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:30,481 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:30,481 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:30,482 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:30,951 | INFO  | Principal.vb | Insercion Factura con el ID: 9074 - 
+2016-11-17 09:56:31,729 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:31,740 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:31,768 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:32,294 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:32,303 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:32,312 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:33,046 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:33,118 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:33,118 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:33,119 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:33,488 | INFO  | Principal.vb | Insercion Factura con el ID: 9075 - 
+2016-11-17 09:56:34,309 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:34,327 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:34,425 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:35,126 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:35,136 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:35,148 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:35,814 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:35,895 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:35,896 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:35,897 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:36,511 | INFO  | Principal.vb | Insercion Factura con el ID: 9076 - 
+2016-11-17 09:56:37,135 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:37,147 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:37,176 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:37,904 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:37,913 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:37,924 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:38,697 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:38,903 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:38,904 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:38,905 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:42,363 | INFO  | Principal.vb | Insercion Factura con el ID: 9077 - 
+2016-11-17 09:56:45,178 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:45,204 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:45,231 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:46,490 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:46,500 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:46,514 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:47,221 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:47,317 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:47,318 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:47,319 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:47,338 | INFO  | Principal.vb | Insercion Factura con el ID: 9078 - 
+2016-11-17 09:56:47,630 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 09:56:47,669 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 09:56:47,694 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 09:56:48,397 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 09:56:48,446 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 09:56:48,458 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 09:56:49,071 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 09:56:49,157 | INFO  | Principal.vb | Error al insertar las partidas - 
+2016-11-17 09:56:49,158 | ERROR | Principal.vb | La conversión de la cadena "violation of PRIMARY or UNIQUE K" en el tipo 'Integer' no es válida. - 
+2016-11-17 09:56:49,159 | FATAL | Principal.vb |    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)   en conexion.ClsProcesos.ejecutaQuery(String query) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsProcesos.vb:línea 284   en conexion.ClsFacturaPartidas.creapartida(ClsFacturaPartidas objpart) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Clases\ClsFacturaPartidas.vb:línea 280   en conexion.Form1.PartidasFactura(String idfactura, Int32 consecutivo, String referencia, List`1 id_salidas) en C:\Users\deintec\Dropbox\Deintec\conexion\conexion\Form1.vb:línea 611 - 
+2016-11-17 09:56:49,196 | INFO  | Principal.vb | Creacion Validacion del embarque    17/11/2016 09:56:49 a. m. - 
+2016-11-17 09:56:50,833 | INFO  | Principal.vb | Fin de proceso....    17/11/2016 09:56:50 a. m. - 
+2016-11-17 09:58:54,158 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 10:02:45,020 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 10:02:45 a. m. - 
+2016-11-17 10:02:53,514 | INFO  | Principal.vb | Insercion Factura con el ID: 9041 - 
+2016-11-17 10:02:53,781 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 10:02:53,802 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 10:02:53,866 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 10:03:28,492 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 10:03:35,662 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 10:03:36,418 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 10:04:27,529 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 10:10:08,313 | INFO  | Borrado.vb | Referencia Borrada - 
+2016-11-17 10:10:19,116 | INFO  | Principal.vb | Inicio de proceso....    17/11/2016 10:10:19 a. m. - 
+2016-11-17 10:10:24,503 | INFO  | Principal.vb | Insercion Factura con el ID: 9041 - 
+2016-11-17 10:10:24,846 | INFO  | Principal.vb | se inserta partida 63169 - 
+2016-11-17 10:10:24,861 | INFO  | Principal.vb | se inserta series #Partida: 63169 - 
+2016-11-17 10:10:24,883 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63169 - 
+2016-11-17 10:12:05,133 | INFO  | Principal.vb | Insercion Factura con el ID: 9042 - 
+2016-11-17 10:12:05,400 | INFO  | Principal.vb | se inserta partida 63170 - 
+2016-11-17 10:12:05,446 | INFO  | Principal.vb | se inserta series #Partida: 63170 - 
+2016-11-17 10:12:05,534 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63170 - 
+2016-11-17 10:12:13,957 | INFO  | Principal.vb | se inserta partida 63171 - 
+2016-11-17 10:12:13,999 | INFO  | Principal.vb | se inserta series #Partida: 63171 - 
+2016-11-17 10:12:14,008 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63171 - 
+2016-11-17 10:12:15,408 | INFO  | Principal.vb | Insercion Factura con el ID: 9043 - 
+2016-11-17 10:12:15,675 | INFO  | Principal.vb | se inserta partida 63172 - 
+2016-11-17 10:12:15,684 | INFO  | Principal.vb | se inserta series #Partida: 63172 - 
+2016-11-17 10:12:15,693 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63172 - 
+2016-11-17 10:12:17,134 | INFO  | Principal.vb | Insercion Factura con el ID: 9044 - 
+2016-11-17 10:12:17,401 | INFO  | Principal.vb | se inserta partida 63173 - 
+2016-11-17 10:12:17,410 | INFO  | Principal.vb | se inserta series #Partida: 63173 - 
+2016-11-17 10:12:17,422 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63173 - 
+2016-11-17 10:12:18,593 | INFO  | Principal.vb | se inserta partida 63174 - 
+2016-11-17 10:12:18,618 | INFO  | Principal.vb | se inserta series #Partida: 63174 - 
+2016-11-17 10:12:18,629 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63174 - 
+2016-11-17 10:12:19,514 | INFO  | Principal.vb | se inserta partida 63175 - 
+2016-11-17 10:12:19,524 | INFO  | Principal.vb | se inserta series #Partida: 63175 - 
+2016-11-17 10:12:19,541 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63175 - 
+2016-11-17 10:12:37,711 | INFO  | Principal.vb | Insercion Factura con el ID: 9045 - 
+2016-11-17 10:12:37,979 | INFO  | Principal.vb | se inserta partida 63176 - 
+2016-11-17 10:12:38,002 | INFO  | Principal.vb | se inserta series #Partida: 63176 - 
+2016-11-17 10:12:38,013 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63176 - 
+2016-11-17 10:12:49,527 | INFO  | Principal.vb | Insercion Factura con el ID: 9067 - 
+2016-11-17 10:12:49,814 | INFO  | Principal.vb | se inserta partida 63218 - 
+2016-11-17 10:12:49,887 | INFO  | Principal.vb | se inserta series #Partida: 63218 - 
+2016-11-17 10:12:49,897 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63218 - 
+2016-11-17 10:13:15,867 | INFO  | Principal.vb | se inserta partida 63219 - 
+2016-11-17 10:13:15,904 | INFO  | Principal.vb | se inserta series #Partida: 63219 - 
+2016-11-17 10:13:15,915 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63219 - 
+2016-11-17 10:13:16,841 | INFO  | Principal.vb | se inserta partida 63220 - 
+2016-11-17 10:13:16,850 | INFO  | Principal.vb | se inserta series #Partida: 63220 - 
+2016-11-17 10:13:16,859 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63220 - 
+2016-11-17 10:13:17,569 | INFO  | Principal.vb | se inserta partida 63221 - 
+2016-11-17 10:13:17,627 | INFO  | Principal.vb | se inserta series #Partida: 63221 - 
+2016-11-17 10:13:17,956 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63221 - 
+2016-11-17 10:13:18,774 | INFO  | Principal.vb | se inserta partida 63222 - 
+2016-11-17 10:13:18,783 | INFO  | Principal.vb | se inserta series #Partida: 63222 - 
+2016-11-17 10:13:18,794 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63222 - 
+2016-11-17 10:13:19,534 | INFO  | Principal.vb | se inserta partida 63223 - 
+2016-11-17 10:13:19,561 | INFO  | Principal.vb | se inserta series #Partida: 63223 - 
+2016-11-17 10:13:19,636 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63223 - 
+2016-11-17 10:13:21,703 | INFO  | Principal.vb | se inserta partida 63224 - 
+2016-11-17 10:13:21,729 | INFO  | Principal.vb | se inserta series #Partida: 63224 - 
+2016-11-17 10:13:21,740 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63224 - 
+2016-11-17 10:13:22,673 | INFO  | Principal.vb | se inserta partida 63225 - 
+2016-11-17 10:13:22,702 | INFO  | Principal.vb | se inserta series #Partida: 63225 - 
+2016-11-17 10:13:22,750 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63225 - 
+2016-11-17 10:13:23,489 | INFO  | Principal.vb | se inserta partida 63226 - 
+2016-11-17 10:13:23,562 | INFO  | Principal.vb | se inserta series #Partida: 63226 - 
+2016-11-17 10:13:23,612 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63226 - 
+2016-11-17 10:13:24,430 | INFO  | Principal.vb | se inserta partida 63227 - 
+2016-11-17 10:13:24,496 | INFO  | Principal.vb | se inserta series #Partida: 63227 - 
+2016-11-17 10:13:24,515 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63227 - 
+2016-11-17 10:13:38,282 | INFO  | Principal.vb | se inserta partida 63228 - 
+2016-11-17 10:13:38,316 | INFO  | Principal.vb | se inserta series #Partida: 63228 - 
+2016-11-17 10:13:38,414 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63228 - 
+2016-11-17 10:13:39,254 | INFO  | Principal.vb | se inserta partida 63229 - 
+2016-11-17 10:13:39,265 | INFO  | Principal.vb | se inserta series #Partida: 63229 - 
+2016-11-17 10:13:39,275 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63229 - 
+2016-11-17 10:13:40,015 | INFO  | Principal.vb | se inserta partida 63230 - 
+2016-11-17 10:13:40,277 | INFO  | Principal.vb | se inserta series #Partida: 63230 - 
+2016-11-17 10:13:40,334 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63230 - 
+2016-11-17 10:13:41,015 | INFO  | Principal.vb | se inserta partida 63231 - 
+2016-11-17 10:13:41,035 | INFO  | Principal.vb | se inserta series #Partida: 63231 - 
+2016-11-17 10:13:41,083 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63231 - 
+2016-11-17 10:13:41,856 | INFO  | Principal.vb | se inserta partida 63232 - 
+2016-11-17 10:13:41,876 | INFO  | Principal.vb | se inserta series #Partida: 63232 - 
+2016-11-17 10:13:41,940 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63232 - 
+2016-11-17 10:13:42,699 | INFO  | Principal.vb | se inserta partida 63233 - 
+2016-11-17 10:13:42,709 | INFO  | Principal.vb | se inserta series #Partida: 63233 - 
+2016-11-17 10:13:42,718 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63233 - 
+2016-11-17 10:13:43,419 | INFO  | Principal.vb | se inserta partida 63234 - 
+2016-11-17 10:13:43,427 | INFO  | Principal.vb | se inserta series #Partida: 63234 - 
+2016-11-17 10:13:43,437 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63234 - 
+2016-11-17 10:13:44,163 | INFO  | Principal.vb | se inserta partida 63235 - 
+2016-11-17 10:13:44,190 | INFO  | Principal.vb | se inserta series #Partida: 63235 - 
+2016-11-17 10:13:44,202 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63235 - 
+2016-11-17 10:13:44,834 | INFO  | Principal.vb | se inserta partida 63236 - 
+2016-11-17 10:13:44,844 | INFO  | Principal.vb | se inserta series #Partida: 63236 - 
+2016-11-17 10:13:44,855 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63236 - 
+2016-11-17 10:13:45,520 | INFO  | Principal.vb | se inserta partida 63237 - 
+2016-11-17 10:13:45,528 | INFO  | Principal.vb | se inserta series #Partida: 63237 - 
+2016-11-17 10:13:45,539 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63237 - 
+2016-11-17 10:13:46,185 | INFO  | Principal.vb | se inserta partida 63238 - 
+2016-11-17 10:13:46,211 | INFO  | Principal.vb | se inserta series #Partida: 63238 - 
+2016-11-17 10:13:46,224 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63238 - 
+2016-11-17 10:13:46,768 | INFO  | Principal.vb | se inserta partida 63239 - 
+2016-11-17 10:13:46,777 | INFO  | Principal.vb | se inserta series #Partida: 63239 - 
+2016-11-17 10:13:46,842 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63239 - 
+2016-11-17 10:13:47,556 | INFO  | Principal.vb | se inserta partida 63240 - 
+2016-11-17 10:13:47,566 | INFO  | Principal.vb | se inserta series #Partida: 63240 - 
+2016-11-17 10:13:47,576 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63240 - 
+2016-11-17 10:13:48,372 | INFO  | Principal.vb | se inserta partida 63241 - 
+2016-11-17 10:13:48,400 | INFO  | Principal.vb | se inserta series #Partida: 63241 - 
+2016-11-17 10:13:48,412 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63241 - 
+2016-11-17 10:13:49,230 | INFO  | Principal.vb | se inserta partida 63242 - 
+2016-11-17 10:13:49,240 | INFO  | Principal.vb | se inserta series #Partida: 63242 - 
+2016-11-17 10:13:49,251 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63242 - 
+2016-11-17 10:13:50,002 | INFO  | Principal.vb | se inserta partida 63243 - 
+2016-11-17 10:13:50,012 | INFO  | Principal.vb | se inserta series #Partida: 63243 - 
+2016-11-17 10:13:50,022 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63243 - 
+2016-11-17 10:13:50,739 | INFO  | Principal.vb | se inserta partida 63244 - 
+2016-11-17 10:13:50,751 | INFO  | Principal.vb | se inserta series #Partida: 63244 - 
+2016-11-17 10:13:50,762 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63244 - 
+2016-11-17 10:13:51,490 | INFO  | Principal.vb | se inserta partida 63245 - 
+2016-11-17 10:13:51,500 | INFO  | Principal.vb | se inserta series #Partida: 63245 - 
+2016-11-17 10:13:51,511 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63245 - 
+2016-11-17 10:13:52,224 | INFO  | Principal.vb | se inserta partida 63246 - 
+2016-11-17 10:13:52,252 | INFO  | Principal.vb | se inserta series #Partida: 63246 - 
+2016-11-17 10:13:52,265 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63246 - 
+2016-11-17 10:13:52,874 | INFO  | Principal.vb | se inserta partida 63247 - 
+2016-11-17 10:13:52,898 | INFO  | Principal.vb | se inserta series #Partida: 63247 - 
+2016-11-17 10:13:52,909 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63247 - 
+2016-11-17 10:13:53,543 | INFO  | Principal.vb | se inserta partida 63248 - 
+2016-11-17 10:13:53,552 | INFO  | Principal.vb | se inserta series #Partida: 63248 - 
+2016-11-17 10:13:53,566 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63248 - 
+2016-11-17 10:13:54,271 | INFO  | Principal.vb | se inserta partida 63249 - 
+2016-11-17 10:13:54,300 | INFO  | Principal.vb | se inserta series #Partida: 63249 - 
+2016-11-17 10:13:54,313 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63249 - 
+2016-11-17 10:13:54,999 | INFO  | Principal.vb | Insercion Factura con el ID: 9068 - 
+2016-11-17 10:13:55,280 | INFO  | Principal.vb | se inserta partida 63250 - 
+2016-11-17 10:13:55,290 | INFO  | Principal.vb | se inserta series #Partida: 63250 - 
+2016-11-17 10:13:55,302 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63250 - 
+2016-11-17 10:14:06,587 | INFO  | Principal.vb | se inserta partida 63251 - 
+2016-11-17 10:14:06,614 | INFO  | Principal.vb | se inserta series #Partida: 63251 - 
+2016-11-17 10:14:06,628 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63251 - 
+2016-11-17 10:14:08,096 | INFO  | Principal.vb | Insercion Factura con el ID: 9069 - 
+2016-11-17 10:14:08,379 | INFO  | Principal.vb | se inserta partida 63252 - 
+2016-11-17 10:14:08,663 | INFO  | Principal.vb | se inserta series #Partida: 63252 - 
+2016-11-17 10:14:08,692 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63252 - 
+2016-11-17 10:14:14,623 | INFO  | Principal.vb | Insercion Factura con el ID: 9071 - 
+2016-11-17 10:14:14,891 | INFO  | Principal.vb | se inserta partida 63254 - 
+2016-11-17 10:14:14,920 | INFO  | Principal.vb | se inserta series #Partida: 63254 - 
+2016-11-17 10:14:15,015 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63254 - 
+2016-11-17 10:14:20,400 | INFO  | Principal.vb | se inserta partida 63255 - 
+2016-11-17 10:14:20,434 | INFO  | Principal.vb | se inserta series #Partida: 63255 - 
+2016-11-17 10:14:20,448 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63255 - 
+2016-11-17 10:14:21,267 | INFO  | Principal.vb | se inserta partida 63256 - 
+2016-11-17 10:14:21,277 | INFO  | Principal.vb | se inserta series #Partida: 63256 - 
+2016-11-17 10:14:21,292 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63256 - 
+2016-11-17 10:14:21,780 | INFO  | Principal.vb | se inserta partida 63257 - 
+2016-11-17 10:14:21,790 | INFO  | Principal.vb | se inserta series #Partida: 63257 - 
+2016-11-17 10:14:21,801 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63257 - 
+2016-11-17 10:14:22,453 | INFO  | Principal.vb | se inserta partida 63258 - 
+2016-11-17 10:14:22,481 | INFO  | Principal.vb | se inserta series #Partida: 63258 - 
+2016-11-17 10:14:22,495 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63258 - 
+2016-11-17 10:14:23,069 | INFO  | Principal.vb | se inserta partida 63259 - 
+2016-11-17 10:14:23,147 | INFO  | Principal.vb | se inserta series #Partida: 63259 - 
+2016-11-17 10:14:23,192 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63259 - 
+2016-11-17 10:14:23,672 | INFO  | Principal.vb | se inserta partida 63260 - 
+2016-11-17 10:14:23,680 | INFO  | Principal.vb | se inserta series #Partida: 63260 - 
+2016-11-17 10:14:23,725 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63260 - 
+2016-11-17 10:14:24,351 | INFO  | Principal.vb | se inserta partida 63261 - 
+2016-11-17 10:14:24,377 | INFO  | Principal.vb | se inserta series #Partida: 63261 - 
+2016-11-17 10:14:24,389 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63261 - 
+2016-11-17 10:14:24,923 | INFO  | Principal.vb | se inserta partida 63262 - 
+2016-11-17 10:14:25,103 | INFO  | Principal.vb | se inserta series #Partida: 63262 - 
+2016-11-17 10:14:25,157 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63262 - 
+2016-11-17 10:14:25,581 | INFO  | Principal.vb | se inserta partida 63263 - 
+2016-11-17 10:14:25,614 | INFO  | Principal.vb | se inserta series #Partida: 63263 - 
+2016-11-17 10:14:25,664 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63263 - 
+2016-11-17 10:14:26,340 | INFO  | Principal.vb | se inserta partida 63264 - 
+2016-11-17 10:14:26,364 | INFO  | Principal.vb | se inserta series #Partida: 63264 - 
+2016-11-17 10:14:26,378 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63264 - 
+2016-11-17 10:14:27,224 | INFO  | Principal.vb | se inserta partida 63265 - 
+2016-11-17 10:14:27,234 | INFO  | Principal.vb | se inserta series #Partida: 63265 - 
+2016-11-17 10:14:27,250 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63265 - 
+2016-11-17 10:14:28,548 | INFO  | Principal.vb | se inserta partida 63266 - 
+2016-11-17 10:14:28,574 | INFO  | Principal.vb | se inserta series #Partida: 63266 - 
+2016-11-17 10:14:28,588 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63266 - 
+2016-11-17 10:14:29,318 | INFO  | Principal.vb | se inserta partida 63267 - 
+2016-11-17 10:14:29,327 | INFO  | Principal.vb | se inserta series #Partida: 63267 - 
+2016-11-17 10:14:29,339 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63267 - 
+2016-11-17 10:14:29,931 | INFO  | Principal.vb | Insercion Factura con el ID: 9072 - 
+2016-11-17 10:14:30,200 | INFO  | Principal.vb | se inserta partida 63268 - 
+2016-11-17 10:14:30,246 | INFO  | Principal.vb | se inserta series #Partida: 63268 - 
+2016-11-17 10:14:30,297 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63268 - 
+2016-11-17 10:14:32,134 | INFO  | Principal.vb | Insercion Factura con el ID: 9073 - 
+2016-11-17 10:14:32,411 | INFO  | Principal.vb | se inserta partida 63269 - 
+2016-11-17 10:14:32,436 | INFO  | Principal.vb | se inserta series #Partida: 63269 - 
+2016-11-17 10:14:32,450 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63269 - 
+2016-11-17 10:14:32,982 | INFO  | Principal.vb | Insercion Factura con el ID: 9074 - 
+2016-11-17 10:14:33,258 | INFO  | Principal.vb | se inserta partida 63270 - 
+2016-11-17 10:14:33,266 | INFO  | Principal.vb | se inserta series #Partida: 63270 - 
+2016-11-17 10:14:33,279 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63270 - 
+2016-11-17 10:14:33,743 | INFO  | Principal.vb | Insercion Factura con el ID: 9075 - 
+2016-11-17 10:14:34,049 | INFO  | Principal.vb | se inserta partida 63271 - 
+2016-11-17 10:14:34,072 | INFO  | Principal.vb | se inserta series #Partida: 63271 - 
+2016-11-17 10:14:34,085 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63271 - 
+2016-11-17 10:14:34,559 | INFO  | Principal.vb | Insercion Factura con el ID: 9076 - 
+2016-11-17 10:14:34,817 | INFO  | Principal.vb | se inserta partida 63272 - 
+2016-11-17 10:14:34,827 | INFO  | Principal.vb | se inserta series #Partida: 63272 - 
+2016-11-17 10:14:34,840 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63272 - 
+2016-11-17 10:14:35,378 | INFO  | Principal.vb | se inserta partida 63273 - 
+2016-11-17 10:14:35,388 | INFO  | Principal.vb | se inserta series #Partida: 63273 - 
+2016-11-17 10:14:35,426 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63273 - 
+2016-11-17 10:14:35,889 | INFO  | Principal.vb | Insercion Factura con el ID: 9077 - 
+2016-11-17 10:14:36,146 | INFO  | Principal.vb | se inserta partida 63274 - 
+2016-11-17 10:14:36,158 | INFO  | Principal.vb | se inserta series #Partida: 63274 - 
+2016-11-17 10:14:36,181 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63274 - 
+2016-11-17 10:14:36,735 | INFO  | Principal.vb | se inserta partida 63275 - 
+2016-11-17 10:14:36,760 | INFO  | Principal.vb | se inserta series #Partida: 63275 - 
+2016-11-17 10:14:36,850 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63275 - 
+2016-11-17 10:14:37,436 | INFO  | Principal.vb | se inserta partida 63276 - 
+2016-11-17 10:14:37,465 | INFO  | Principal.vb | se inserta series #Partida: 63276 - 
+2016-11-17 10:14:37,561 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63276 - 
+2016-11-17 10:14:37,925 | INFO  | Principal.vb | Insercion Factura con el ID: 9078 - 
+2016-11-17 10:14:38,200 | INFO  | Principal.vb | se inserta partida 63277 - 
+2016-11-17 10:14:38,224 | INFO  | Principal.vb | se inserta series #Partida: 63277 - 
+2016-11-17 10:14:38,291 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63277 - 
+2016-11-17 10:14:38,757 | INFO  | Principal.vb | se inserta partida 63278 - 
+2016-11-17 10:14:38,955 | INFO  | Principal.vb | se inserta series #Partida: 63278 - 
+2016-11-17 10:14:38,982 | INFO  | Principal.vb | se inserta indentifcadores #Partida:  63278 - 
+2016-11-17 10:14:39,306 | INFO  | Principal.vb | Creacion Validacion del embarque    17/11/2016 10:14:39 a. m. - 
+2016-11-17 10:14:40,599 | INFO  | Principal.vb | Fin de proceso....    17/11/2016 10:14:40 a. m. - 
+2017-05-23 19:52:42,639 | ERROR | ClsProcesos.vb | I/O error during "CreateFile (open)" operation for file "C:\CASA\CASA SENCILLO\CASA.GDB"
+Error while trying to open file - 
+2017-05-23 19:52:53,005 | ERROR | ClsProcesos.vb | 'C:\CASA\Basedatos\Base SCS Rev 1.accdb' is not a valid path.  Make sure that the path name is spelled correctly and that you are connected to the server on which the file resides. - 
+2017-05-23 19:53:17,459 | ERROR | ClsProcesos.vb | I/O error during "CreateFile (open)" operation for file "C:\CASA\CASA SENCILLO\CASA.GDB"
+Error while trying to open file - 
+2017-05-23 19:53:21,725 | ERROR | ClsProcesos.vb | I/O error during "CreateFile (open)" operation for file "C:\CASA\CASA SENCILLO\CASA.GDB"Error while trying to open file - 
+2017-05-23 19:53:21,725 | INFO  | ClsProcesos.vb | SELECT RDB$RELATION_NAME
+FROM RDB$RELATIONS
+WHERE RDB$SYSTEM_FLAG = 0 AND
+RDB$RELATION_NAME NOT IN (SELECT RDB$VIEW_NAME
+FROM RDB$VIEW_RELATIONS)
+ORDER BY RDB$RELATION_NAME ASC
+ - 
+2017-05-23 19:53:21,787 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnection(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-23 20:28:05,863 | ERROR | ClsProcesos.vb | I/O error during "CreateFile (open)" operation for file "C:\CASA\CASA SENCILLO\CASA.GDB"
+Error while trying to open file - 
+2017-05-23 20:28:09,845 | ERROR | ClsProcesos.vb | 'C:\CASA\Basedatos\Base SCS Rev 1.accdb' is not a valid path.  Make sure that the path name is spelled correctly and that you are connected to the server on which the file resides. - 
+2017-05-28 13:10:33,331 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownCTRAC_INCREMENTAt line 1, column 24 - 
+2017-05-28 13:10:33,414 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM CTRAC_INCREMENT  - 
+2017-05-28 13:10:34,447 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 13:10:48,316 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownCTRAC_INCREMENTAt line 1, column 24 - 
+2017-05-28 13:10:48,316 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM CTRAC_INCREMENT  - 
+2017-05-28 13:10:48,316 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 13:11:02,455 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownCTARC_INCREMENTAt line 1, column 24 - 
+2017-05-28 13:11:02,455 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM CTARC_INCREMENT  - 
+2017-05-28 13:11:02,455 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 13:45:44,937 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownNUM_REFEAt line 4, column 7 - 
+2017-05-28 13:45:44,937 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+FEC_SOLI,CVE_REPR,FIR_ELEC,NUM_FOLI,TIP_ACTU
+ FROM SAAIO_CONFER
+where num_refe='7002410' - 
+2017-05-28 13:45:44,937 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 13:45:53,697 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownNUM_REFEAt line 3, column 26 - 
+2017-05-28 13:45:53,697 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+FEC_SOLI,CVE_REPR,FIR_ELEC,NUM_FOLI,TIP_ACTU
+ FROM SAAIO_CONFER where num_refe='7002410' - 
+2017-05-28 13:45:53,697 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 13:50:18,803 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 4, column 26where - 
+2017-05-28 13:50:18,803 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+TOT_IMPU,VAL_TASA,CVE_IMPU,FPA_IMPU,TIP_TASA,NUM_REFE
+ FROM SAAIO_CONTPED
+where num_refe='7002410' where cve_impu= 1 - 
+2017-05-28 13:50:18,803 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-05-28 14:05:54,764 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownNUM_REFEAt line 4, column 7 - 
+2017-05-28 14:05:54,764 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+RUTV_SAIM3,CONS_SAIM3,PAT_AA,NOM_ORGA,NOM_ASOC,CVE_ADUA,CVE_PREV,SCR_EAV,SCR_RAV,FTP_PASV,SERVIDOR,PUERTO,USU_FTP,PASS_FTP,DIR_FTP,INTER_FTP,ENV_FTP,DIR_BUS,DIR_MOV,DIR_DESC,EXT_ERR,MOV_ARCH
+ FROM SAAIC_PREVAL
+where num_refe ='7002410'
+ - 
+2017-05-28 14:05:54,764 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:13:53,352 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 1, column 64ADN - 
+2017-06-05 14:13:53,419 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM SAAIO_CONTFRA WHERE NUM_REFE ='7002410' ADN CVE_IMPU =3 - 
+2017-06-05 14:13:53,488 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:14:00,477 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 1, column 72CVE_IMPU - 
+2017-06-05 14:14:00,477 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM SAAIO_CONTFRA WHERE NUM_REFE ='7002410' AND ADN CVE_IMPU =3 - 
+2017-06-05 14:14:00,477 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:17:38,809 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownSAAIO_REGAt line 1, column 40 - 
+2017-06-05 14:17:38,809 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM SAAIO_REG WHERE NUM_REFE ='7002410'
+ - 
+2017-06-05 14:17:38,809 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:17:48,379 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownSAAIO_CONTREGAt line 1, column 44 - 
+2017-06-05 14:17:48,379 | INFO  | ClsProcesos.vb | SELECT FIRST 10 * FROM SAAIO_CONTREG WHERE NUM_REFE ='7002410'
+ - 
+2017-06-05 14:17:48,379 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:19:40,554 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownCVA_IMPUAt line 3, column 27 - 
+2017-06-05 14:19:40,554 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+TOT_IMPU,VAL_TASA,CVE_IMPU,FPA_IMPU,TIP_TASA,NUM_REFE
+ FROM SAAIO_CONTPED WHERE CVA_IMPU= 21
+ - 
+2017-06-05 14:19:40,554 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:19:45,418 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownCVA_IMPUAt line 3, column 27 - 
+2017-06-05 14:19:45,418 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+TOT_IMPU,VAL_TASA,CVE_IMPU,FPA_IMPU,TIP_TASA,NUM_REFE
+ FROM SAAIO_CONTPED WHERE CVA_IMPU= 21
+ - 
+2017-06-05 14:19:45,418 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-05 14:24:01,036 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -204Table unknownSAAIO_CONTFERDAt line 3, column 7 - 
+2017-06-05 14:24:01,036 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+*
+ FROM SAAIO_CONTFERD
+--WHERE CVE_IMPU = 21 - 
+2017-06-05 14:24:01,036 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 

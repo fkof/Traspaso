@@ -1,0 +1,112 @@
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.vbprojResolveAssemblyReference.cache
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.vbproj.GenerateResource.Cache
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\bin\Debug\conexion.exe
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\bin\Debug\conexion.pdb
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\bin\Debug\conexion.xml
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.exe
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.xml
+C:\Users\Ing. Alfredo Hdz C\Dropbox\conexion\conexion\obj\x86\Debug\conexion.pdb
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.exe
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.xml
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.pdb
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\bin\Debug\conexion.exe
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\bin\Debug\conexion.pdb
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\bin\Debug\conexion.xml
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.vbprojResolveAssemblyReference.cache
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.Form2.resources
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+C:\Users\ahernandez\Downloads\conexion\conexion\conexion\obj\x86\Debug\conexion.vbproj.GenerateResource.Cache
+D:\New folder\Dropbox\conexion\conexion\bin\Debug\conexion.exe
+D:\New folder\Dropbox\conexion\conexion\bin\Debug\conexion.pdb
+D:\New folder\Dropbox\conexion\conexion\bin\Debug\conexion.xml
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Form2.resources
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.exe
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.xml
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.pdb
+D:\New folder\Dropbox\conexion\conexion\obj\x86\Debug\conexion.Config.resources
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.exe
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.xml
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.pdb
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.vbprojResolveAssemblyReference.cache
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.Config.resources
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.Form2.resources
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\obj\x86\Debug\conexion.vbproj.GenerateResource.Cache
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\bin\Debug\conexion.exe
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\bin\Debug\conexion.pdb
+C:\Users\ahernandez\Dropbox\OP-Computers\conexion\conexion\bin\Debug\conexion.xml
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Config.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.ESTRUCTURA.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Form2.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Remesas.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.vbproj.GenerateResource.Cache
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.exe.config
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.vbprojFakesResolveAssemblyReference.cache
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.vbprojResolveAssemblyReference.cache
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.exe.manifest
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.application
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.exe
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.pdb
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\conexion.xml
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\log4net.1.2.10.0.Fakes.fakesconfig
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\log4net.dll
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\fakes.args
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\b\log4net.1.2.10.0.Fakes.dll
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\b\log4net.1.2.10.0.Fakes.pdb
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\b\log4net.1.2.10.0.Fakes.xml
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\b\log4net.dll
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.ah
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.ch
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.cs
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.csproj
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.fakes
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.fakesconfig
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\f.snk
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\o\f.csproj.FileListAbsolute.txt
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\o\f.csprojResolveAssemblyReference.cache
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\o\log4net.1.2.10.0.Fakes.dll
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\Fakes\l4\o\log4net.1.2.10.0.Fakes.pdb
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.exe.manifest
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.application
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.exe
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.xml
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.pdb
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\bin\Debug\app.config
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Log.resources
+C:\Users\deintec\Dropbox\Deintec\conexion\conexion\obj\x86\Debug\conexion.Borrado.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Borrado.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Config.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.ESTRUCTURA.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Form1.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Form2.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Log.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Resources.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.Remesas.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.vbproj.GenerateResource.Cache
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.exe
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.xml
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.pdb
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.exe.config
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\app.config
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.exe.manifest
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.application
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.exe
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.pdb
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\conexion.xml
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\log4net.1.2.10.0.Fakes.fakesconfig
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\log4net.dll
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.vbprojFakesResolveAssemblyReference.cache
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.exe.manifest
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.application
