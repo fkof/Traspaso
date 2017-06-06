@@ -49,6 +49,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.CuadroDeLiquidacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -185,7 +186,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UntilToolStripMenuItem, Me.BorrarTraspasoToolStripMenuItem, Me.RemesasToolStripMenuItem, Me.ConfigToolStripMenuItem, Me.LogToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CuadroDeLiquidacionToolStripMenuItem, Me.BorrarTraspasoToolStripMenuItem, Me.RemesasToolStripMenuItem, Me.ConfigToolStripMenuItem, Me.LogToolStripMenuItem, Me.UntilToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(488, 24)
@@ -225,7 +226,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 134)
+        Me.Label1.Location = New System.Drawing.Point(12, 120)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
         Me.Label1.TabIndex = 11
@@ -259,6 +260,12 @@ Partial Class Form1
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Aduana"
         '
+        'CuadroDeLiquidacionToolStripMenuItem
+        '
+        Me.CuadroDeLiquidacionToolStripMenuItem.Name = "CuadroDeLiquidacionToolStripMenuItem"
+        Me.CuadroDeLiquidacionToolStripMenuItem.Size = New System.Drawing.Size(139, 20)
+        Me.CuadroDeLiquidacionToolStripMenuItem.Text = "Cuadro de Liquidacion"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -280,7 +287,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Enlace BETA 1.1"
+        Me.Text = "Enlace 3.1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
@@ -317,5 +324,5 @@ Partial Class Form1
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents CuadroDeLiquidacionToolStripMenuItem As ToolStripMenuItem
 End Class

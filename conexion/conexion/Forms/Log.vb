@@ -41,25 +41,28 @@
 
     Private Sub dgvlog_DataBindingComplete(sender As Object, e As DataGridViewBindingCompleteEventArgs) Handles dgvlog.DataBindingComplete
         For i = 0 To dgvlog.Rows.Count - 1
+            If IsDBNull(dgvlog.Rows(i).Cells(1).Value) = False Then
 
-            Select Case dgvlog.Rows(i).Cells(1).Value
-                Case "DEBUG"
-                    dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Green
 
-                Case "INFO"
-                    dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.LightBlue
+                Select Case dgvlog.Rows(i).Cells(1).Value
+                    Case "DEBUG"
+                        dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Green
 
-                Case "WARN"
-                    dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Yellow
+                    Case "INFO"
+                        dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.LightBlue
 
-                Case "ERROR"
-                    dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Red
+                    Case "WARN"
+                        dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Yellow
 
-                Case "FATAL"
-                    dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.OrangeRed
+                    Case "ERROR"
+                        dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.Red
 
-            End Select
+                    Case "FATAL"
+                        dgvlog.Rows(i).DefaultCellStyle.BackColor = Color.OrangeRed
 
+
+                End Select
+            End If
 
         Next
     End Sub

@@ -113,45 +113,45 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Borrado.Designer.vb">
+    <Compile Include="Forms\Borrado.Designer.vb">
       <DependentUpon>Borrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="Borrado.vb">
+    <Compile Include="Forms\Borrado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Clases\ClsPedimento.vb" />
     <Compile Include="Clases\ClsFacturaPartidas.vb" />
     <Compile Include="Clases\ClsProcesos.vb" />
     <Compile Include="Clases\ClsEncFactura.vb" />
-    <Compile Include="Config.Designer.vb">
+    <Compile Include="Forms\Config.Designer.vb">
       <DependentUpon>Config.vb</DependentUpon>
     </Compile>
-    <Compile Include="Config.vb">
+    <Compile Include="Forms\Config.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ESTRUCTURA.Designer.vb">
+    <Compile Include="Forms\ESTRUCTURA.Designer.vb">
       <DependentUpon>ESTRUCTURA.vb</DependentUpon>
     </Compile>
-    <Compile Include="ESTRUCTURA.vb">
+    <Compile Include="Forms\ESTRUCTURA.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Forms\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
+    <Compile Include="Forms\Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Forms\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Log.Designer.vb">
+    <Compile Include="Forms\Log.Designer.vb">
       <DependentUpon>Log.vb</DependentUpon>
     </Compile>
-    <Compile Include="Log.vb">
+    <Compile Include="Forms\Log.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -169,30 +169,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Remesas.Designer.vb">
+    <Compile Include="Forms\Remesas.Designer.vb">
       <DependentUpon>Remesas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Remesas.vb">
+    <Compile Include="Forms\Remesas.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Borrado.resx">
+    <EmbeddedResource Include="Forms\Borrado.resx">
       <DependentUpon>Borrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Config.resx">
+    <EmbeddedResource Include="Forms\Config.resx">
       <DependentUpon>Config.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ESTRUCTURA.resx">
+    <EmbeddedResource Include="Forms\ESTRUCTURA.resx">
       <DependentUpon>ESTRUCTURA.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="Forms\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Log.resx">
+    <EmbeddedResource Include="Forms\Log.resx">
       <DependentUpon>Log.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -201,7 +201,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Remesas.resx">
+    <EmbeddedResource Include="Forms\Remesas.resx">
       <DependentUpon>Remesas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
