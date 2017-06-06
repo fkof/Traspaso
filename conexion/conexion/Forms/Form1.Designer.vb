@@ -40,16 +40,16 @@ Partial Class Form1
         Me.txtPedimento = New System.Windows.Forms.TextBox()
         Me.txtpatente = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.UntilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CuadroDeLiquidacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarTraspasoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UntilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.CuadroDeLiquidacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -193,11 +193,11 @@ Partial Class Form1
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'UntilToolStripMenuItem
+        'CuadroDeLiquidacionToolStripMenuItem
         '
-        Me.UntilToolStripMenuItem.Name = "UntilToolStripMenuItem"
-        Me.UntilToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.UntilToolStripMenuItem.Text = "Until"
+        Me.CuadroDeLiquidacionToolStripMenuItem.Name = "CuadroDeLiquidacionToolStripMenuItem"
+        Me.CuadroDeLiquidacionToolStripMenuItem.Size = New System.Drawing.Size(139, 20)
+        Me.CuadroDeLiquidacionToolStripMenuItem.Text = "Cuadro de Liquidacion"
         '
         'BorrarTraspasoToolStripMenuItem
         '
@@ -222,6 +222,12 @@ Partial Class Form1
         Me.LogToolStripMenuItem.Name = "LogToolStripMenuItem"
         Me.LogToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.LogToolStripMenuItem.Text = "Log"
+        '
+        'UntilToolStripMenuItem
+        '
+        Me.UntilToolStripMenuItem.Name = "UntilToolStripMenuItem"
+        Me.UntilToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.UntilToolStripMenuItem.Text = "Until"
         '
         'Label1
         '
@@ -259,12 +265,6 @@ Partial Class Form1
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Aduana"
-        '
-        'CuadroDeLiquidacionToolStripMenuItem
-        '
-        Me.CuadroDeLiquidacionToolStripMenuItem.Name = "CuadroDeLiquidacionToolStripMenuItem"
-        Me.CuadroDeLiquidacionToolStripMenuItem.Size = New System.Drawing.Size(139, 20)
-        Me.CuadroDeLiquidacionToolStripMenuItem.Text = "Cuadro de Liquidacion"
         '
         'Form1
         '

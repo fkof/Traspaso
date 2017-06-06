@@ -472,5 +472,11 @@
 
         Return objpedimento
     End Function
+    Function getCuadroLiquidacion(ByVal params As Object) As ClsPedimento
+        Dim objclspedimento As New ClsPedimento
+        MessageBox.Show("alerta" + params.Parametro1)
+        MessageBox.Show("alertaw" + params.Parametro2)
+        Return objclspedimento
+    End Function
 
 End Class

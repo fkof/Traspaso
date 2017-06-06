@@ -129,6 +129,12 @@
     <Compile Include="Forms\Config.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\CuadroDeLiquidaion.Designer.vb">
+      <DependentUpon>CuadroDeLiquidaion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CuadroDeLiquidaion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\ESTRUCTURA.Designer.vb">
       <DependentUpon>ESTRUCTURA.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Config.resx">
       <DependentUpon>Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CuadroDeLiquidaion.resx">
+      <DependentUpon>CuadroDeLiquidaion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ESTRUCTURA.resx">
       <DependentUpon>ESTRUCTURA.vb</DependentUpon>

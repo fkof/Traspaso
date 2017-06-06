@@ -798,4 +798,8 @@ Public Class Form1
     Private Sub LogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogToolStripMenuItem.Click
         conexion.Log.Show()
     End Sub
+
+    Private Sub CuadroDeLiquidacionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CuadroDeLiquidacionToolStripMenuItem.Click
+        CuadroDeLiquidaion.Show()
+    End Sub
 End Class

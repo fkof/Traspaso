@@ -110,3 +110,4 @@ C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\bin\Debug\log4net.dll
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.vbprojFakesResolveAssemblyReference.cache
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.exe.manifest
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.application
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.CuadroDeLiquidaion.resources
