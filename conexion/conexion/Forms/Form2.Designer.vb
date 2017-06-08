@@ -166,7 +166,6 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1180, 539)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
@@ -174,6 +173,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.txtconsulta)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "Form2"
         Me.Text = "Form2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
