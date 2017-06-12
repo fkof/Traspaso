@@ -509,3 +509,59 @@ TOT_IMPU,VAL_TASA,CVE_IMPU,FPA_IMPU,TIP_TASA,NUM_REFE
  FROM SAAIO_CONTFERD
 --WHERE CVE_IMPU = 21 - 
 2017-06-05 14:24:01,036 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-12 17:42:42,641 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 1, column 20SUM - 
+2017-06-12 17:42:42,695 | INFO  | ClsProcesos.vb | SELECT TOT_IMPU AS SUM,CVE_IMPU FROM SAAIO_CONTPED WHERE NUM_REFE='7002410'
+UNION
+SELECT SUM(TOT_IMPU),CVE_IMPU FROM SAAIO_CONTFRA 
+WHERE NUM_REFE='7002410'
+GROUP BY CVE_IMPU - 
+2017-06-12 17:42:42,756 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-12 17:53:44,495 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC". - 
+2017-06-12 17:53:51,136 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC". - 
+2017-06-12 17:53:51,138 | INFO  | ClsProcesos.vb | SELECT FIRST 100 
+TOT_IMPU,VAL_TASA,CVE_IMPU,FPA_IMPU,TIP_TASA,NUM_REFE,TIP_IMPU
+ FROM SAAIO_CONTREC
+ - 
+2017-06-12 17:53:51,140 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnection(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.CreateNewConnectionIfPossibleImpl(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Pool.GetConnection(FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnectionPoolManager.Get(FbConnectionString connectionString, FbConnection owner)   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2017-06-12 17:55:04,548 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC". - 
+2017-06-12 17:55:32,533 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC.neoris.cxnetworks.net". - 
+2017-06-12 17:56:08,962 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC.neoris.cxnetworks.net". - 
+2017-06-12 17:56:30,073 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC.neoris.cxnetworks.net". - 
+2017-06-12 17:56:56,194 | ERROR | ClsProcesos.vb | Unable to complete network request to host "neoris.cxnetworks.net\E-HERNANDEZC". - 
+2017-06-12 17:57:17,049 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC". - 
+2017-06-12 17:58:29,845 | ERROR | ClsProcesos.vb | Unable to complete network request to host "E-HERNANDEZC". - 
+2017-06-12 18:19:07,583 | ERROR | ClsProcesos.vb | Syntax error in FROM clause. - 
+2017-06-12 18:19:07,597 | INFO  | ClsProcesos.vb | SELECT TOT_IMPU AS SUMA ,CVE_IMPU
+FROM SAAIO_CONTPED
+FROM SAAIO_CONTPED
+WHERE NUM_REFE=''
+UNION
+SELECT SUM(TOT_IMPU) AS SUMA,CVE_IMPU
+FROM SAAIO_CONTFRA 
+WHERE NUM_REFE=''
+GROUP BY CVE_IMPU
+ - 
+2017-06-12 18:19:07,629 | FATAL | ClsProcesos.vb |    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 238 - 
+2017-06-12 18:20:28,790 | ERROR | ClsProcesos.vb | Syntax error in FROM clause. - 
+2017-06-12 18:20:28,805 | INFO  | ClsProcesos.vb | SELECT TOT_IMPU AS SUMA ,CVE_IMPU
+FROM SAAIO_CONTPED
+FROM SAAIO_CONTPED
+WHERE NUM_REFE=''
+UNION
+SELECT SUM(TOT_IMPU) AS SUMA,CVE_IMPU
+FROM SAAIO_CONTFRA 
+WHERE NUM_REFE=''
+GROUP BY CVE_IMPU
+ - 
+2017-06-12 18:20:28,809 | FATAL | ClsProcesos.vb |    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 238 - 
+2017-06-12 18:21:10,562 | ERROR | ClsProcesos.vb | The Microsoft Office Access database engine cannot find the input table or query 'SAAIO_CONTPED'.  Make sure it exists and that its name is spelled correctly. - 
+2017-06-12 18:21:10,576 | INFO  | ClsProcesos.vb | SELECT TOT_IMPU AS SUMA ,CVE_IMPU
+FROM SAAIO_CONTPED
+WHERE NUM_REFE=''
+UNION
+SELECT SUM(TOT_IMPU) AS SUMA,CVE_IMPU
+FROM SAAIO_CONTFRA 
+WHERE NUM_REFE=''
+GROUP BY CVE_IMPU
+ - 
+2017-06-12 18:21:10,580 | FATAL | ClsProcesos.vb |    at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 238 - 

@@ -1,7 +1,7 @@
 <CONEXION>
   <usuario>SYSDBA</usuario>
   <password>masterkey</password>
-  <servidor>E-HERNANDEZC</servidor>
+  <servidor>E-AHERNANDEZC</servidor>
   <rutafb>C:\Users\e-ahernandezc\Documents\Traspaso 2.0\CASA.GDB</rutafb>
   <rutaacc>C:\Users\e-ahernandezc\Documents\Traspaso 2.0\Base SCS Rev 1 Alfredo.accdb</rutaacc>
 </CONEXION>

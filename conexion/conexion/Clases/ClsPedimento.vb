@@ -1,4 +1,6 @@
-﻿<Serializable()> Public Class ClsPedimento
+﻿Imports System.Text
+
+<Serializable()> Public Class ClsPedimento
 #Region "Propiedades"
     Private _Referencia As String
     Private _Importador As String
@@ -344,7 +346,7 @@
 
     Function creaembarque(ByVal objpedimento As ClsPedimento) As Boolean
         Dim objfb As New ClsProcesos
-        Dim consulta As String = String.Format("INSERT INTO CTRAO_EMBAR (NUM_REFE , IMP_EXPO , ADU_DESP , PAT_AGEN , CVE_PEDI, ADU_ENTR, FEC_ENTR,CVE_CAPT,CVE_IMPO,APE_REFE,SEC_DESP,IMP_FLET,IMP_SEGU,IMP_EMBA,IMP_OTRO,INC_FLET,INC_SEGU,INC_EMBA,INC_OTRO,MON_GUIA,MAR_NUME,PES_BRUT,CAN_BULT,tip_bult,des_orig)  " & _
+        Dim consulta As String = String.Format("INSERT INTO CTRAO_EMBAR (NUM_REFE , IMP_EXPO , ADU_DESP , PAT_AGEN , CVE_PEDI, ADU_ENTR, FEC_ENTR,CVE_CAPT,CVE_IMPO,APE_REFE,SEC_DESP,IMP_FLET,IMP_SEGU,IMP_EMBA,IMP_OTRO,INC_FLET,INC_SEGU,INC_EMBA,INC_OTRO,MON_GUIA,MAR_NUME,PES_BRUT,CAN_BULT,tip_bult,des_orig)  " &
                                                "VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}','{18}','{19}','{20}','{21}','{22}',33,9)",
                                                objpedimento.Referencia, objpedimento.Toper, objpedimento.Adudesp, objpedimento.Patente, objpedimento.CvePedimento, objpedimento.AduEnt, String.Format("{0:MM/dd/yyyy}", objpedimento.FechaEntrada), objpedimento.EmbCve_Capt, objpedimento.Importador, String.Format("{0:MM/dd/yyyy}", objpedimento.EmbApe_Refe), objpedimento.EmbSec_Desp,
                                                objpedimento.Fletes, objpedimento.Seguro, objpedimento.Embalaje, objpedimento.Otros, objpedimento.impFletes, objpedimento.impSeguro, objpedimento.impEmbalaje, objpedimento.impOtros, "USD", "S/M S/N", objpedimento.PesoBruto, objpedimento.Bultos)
@@ -360,7 +362,7 @@
     End Function
     Function InsertaEncabezadoPedimento(ByVal objpedimento As ClsPedimento) As Boolean
         Dim objfb As New ClsProcesos
-        Dim consulta As String = String.Format("INSERT INTO SAAIO_PEDIME(Num_refe,cve_impo,imp_expo,Adu_Desp,Pat_agen,Num_pedi,Adu_entr,Fec_Entr,cve_pedi,reg_adua,pes_brut, mar_nume) " & _
+        Dim consulta As String = String.Format("INSERT INTO SAAIO_PEDIME(Num_refe,cve_impo,imp_expo,Adu_Desp,Pat_agen,Num_pedi,Adu_entr,Fec_Entr,cve_pedi,reg_adua,pes_brut, mar_nume) " &
        "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}','{18}','{19}','{20}','{21}','{22},'{23}')", objpedimento.Referencia, objpedimento.Importador, objpedimento.Toper, objpedimento.Adudesp, objpedimento.Patente, objpedimento.NoPedimento, objpedimento.AduEnt, String.Format("{0:MM/dd/yyyy}", objpedimento.FechaEntrada), objpedimento.CvePedimento, objpedimento.Regimen, objpedimento.PesoBruto, "S/M S/N")
         If objfb.ejecutaQuery(consulta) Then
             Return True
@@ -432,7 +434,7 @@
 
         objpedimento.Referencia = dr("Kalisch Referencia")
 
-       
+
 
         If dr("T OperINT") = "1" Then
             objpedimento.Toper = 1
@@ -472,11 +474,25 @@
 
         Return objpedimento
     End Function
-    Function getCuadroLiquidacion(ByVal params As Object) As ClsPedimento
+    Function getCuadroLiquidacion(ByVal params As Object) As DataTable
         Dim objclspedimento As New ClsPedimento
-        MessageBox.Show("alerta" + params.Parametro1)
-        MessageBox.Show("alertaw" + params.Parametro2)
-        Return objclspedimento
+        Dim objProc As New ClsProcesos
+
+        Dim consulta As New StringBuilder
+        consulta.AppendLine("SELECT TOT_IMPU AS SUMA ,CVE_IMPU")
+        consulta.AppendLine("FROM SAAIO_CONTPED")
+        consulta.AppendLine(String.Format("WHERE NUM_REFE='{0}'", params.Referencia))
+        consulta.AppendLine("UNION")
+        consulta.AppendLine("SELECT SUM(TOT_IMPU) AS SUMA,CVE_IMPU")
+        consulta.AppendLine("FROM SAAIO_CONTFRA ")
+        consulta.AppendLine(String.Format("WHERE NUM_REFE='{0}'", params.Referencia))
+        consulta.AppendLine("GROUP BY CVE_IMPU")
+
+        Dim dt As New DataTable
+        dt = objProc.llenaDataSet(consulta.ToString(), "FB")
+        ' MessageBox.Show("alerta" + params.Parametro1)
+        ' MessageBox.Show("alertaw" + params.Parametro2)
+        Return dt
     End Function
 
 End Class
