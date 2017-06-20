@@ -35,81 +35,103 @@ Public Class Form2
     Private Sub txtconsulta_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtconsulta.KeyPress
         Dim text_query As String = ""
         text_query = txtconsulta.Text
-
+        txtconsulta.Text = ""
         'If e.KeyChar = "'" Then
         '    isString = True
         'End If
         'If txtconsulta.Text <> "" Then
 
 
-        Dim COMIENZO As Integer = txtconsulta.SelectionStart()
-        Dim cadena As String = txtconsulta.Text
-        For I = 0 To txtconsulta.TextLength - 6
-            If UCase(cadena.Substring(I, 6)) = "SELECT" Then
-                txtconsulta.Select(I, 6)
-                txtconsulta.SelectionColor = Color.SteelBlue
-                txtconsulta.SelectionFont = New Font("Tahoma", 12, FontStyle.Bold)
-                txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
-                If isString Then
-                    txtconsulta.SelectionColor = Color.Red
-                Else
-                    txtconsulta.SelectionColor = Color.Black
-                    isString = False
-                End If
-                I = I + 1
-            End If
-        Next
 
 
-        For I = 0 To txtconsulta.TextLength - 4
-            If UCase(cadena.Substring(I, 4)) = "FROM" Then
-                txtconsulta.Select(I, 4)
-                txtconsulta.SelectionColor = Color.SteelBlue
-                txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
-                If isString Then
-                    txtconsulta.SelectionColor = Color.Red
-                Else
-                    txtconsulta.SelectionColor = Color.Black
-                    isString = False
-                End If
-                I = I + 1
-            End If
-        Next
+        'Dim COMIENZO As Integer = txtconsulta.SelectionStart()
+        'Dim cadena As String = txtconsulta.Text
+        'For I = 0 To txtconsulta.TextLength - 6
+        '    If UCase(cadena.Substring(I, 6)) = "SELECT" Then
+        '        txtconsulta.Select(I, 6)
+        '        txtconsulta.SelectionColor = Color.SteelBlue
+        '        txtconsulta.SelectionFont = New Font("Tahoma", 12, FontStyle.Bold)
+        '        txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
+        '        If isString Then
+        '            txtconsulta.SelectionColor = Color.Red
+        '        Else
+        '            txtconsulta.SelectionColor = Color.Black
+        '            isString = False
+        '        End If
+        '        I = I + 1
+        '    End If
+        'Next
 
-        For I = 0 To txtconsulta.TextLength - 5
-            If UCase(cadena.Substring(I, 5)) = "WHERE" Then
-                txtconsulta.Select(I, 5)
-                txtconsulta.SelectionColor = Color.SteelBlue
-                txtconsulta.Select(txtconsulta.TextLength, txtconsulta.TextLength)
-                If isString Then
-                    txtconsulta.SelectionColor = Color.Red
-                Else
-                    txtconsulta.SelectionColor = Color.Black
-                    isString = False
-                End If
-                I = I + 1
-            End If
-        Next
 
-        If e.KeyChar = "'" Then
-            If isString Then
-                txtconsulta.SelectionColor = Color.Black
-                isString = False
-            Else
-                txtconsulta.SelectionColor = Color.Red
-                isString = True
-            End If
-        End If
+        'For I = 0 To txtconsulta.TextLength - 4
+        '    If UCase(cadena.Substring(I, 4)) = "FROM" Then
+        '        txtconsulta.Select(I, 4)
+        '        txtconsulta.SelectionColor = Color.SteelBlue
+        '        txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
+        '        If isString Then
+        '            txtconsulta.SelectionColor = Color.Red
+        '        Else
+        '            txtconsulta.SelectionColor = Color.Black
+        '            isString = False
+        '        End If
+        '        I = I + 1
+        '    End If
+        'Next
 
-        txtconsulta.SelectionStart = COMIENZO
+        'For I = 0 To txtconsulta.TextLength - 5
+        '    If UCase(cadena.Substring(I, 5)) = "WHERE" Then
+        '        txtconsulta.Select(I, 5)
+        '        txtconsulta.SelectionColor = Color.SteelBlue
+        '        txtconsulta.Select(txtconsulta.TextLength, txtconsulta.TextLength)
+        '        If isString Then
+        '            txtconsulta.SelectionColor = Color.Red
+        '        Else
+        '            txtconsulta.SelectionColor = Color.Black
+        '            isString = False
+        '        End If
+        '        I = I + 1
+        '    End If
+        'Next
+
+        'If e.KeyChar = "'" Then
+        '    If isString Then
+        '        txtconsulta.SelectionColor = Color.Black
+        '        isString = False
+        '    Else
+        '        txtconsulta.SelectionColor = Color.Red
+        '        isString = True
+        '    End If
+        'End If
+
+        'txtconsulta.SelectionStart = COMIENZO
 
     End Sub
 
     Private Sub txtconsulta_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtconsulta.KeyUp
+        Dim text_query As String = ""
+        text_query = txtconsulta.Text
+        txtconsulta.Text = ""
+        'If e.KeyChar = "'" Then
+        '    isString = True
+        'End If
+        'If txtconsulta.Text <> "" Then
+
+        Dim listwords As String()
+        listwords = text_query.Split(" ")
+
+        For index = 0 To listwords.Length - 1
+            Dim word As String = listwords(index)
+            If word.ToUpper = "SELECT" Then
+                txtconsulta.ForeColor = Color.BlueViolet
+                txtconsulta.Text += word
+                txtconsulta.ForeColor = Color.Red
+            End If
+            txtconsulta.Text += word
+        Next
         If e.KeyCode = 32 Then
 
 
-        
+
         End If
     End Sub
     Private Sub Buscar_Coincidencia(ByVal pattern As String, ByVal RichTextBox As RichTextBox, ByVal cColor As Color, ByVal BackColor As Color)
@@ -172,7 +194,7 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtpass.Focus()
+
         hiloSegundoPlano.RunWorkerAsync()
     End Sub
 
@@ -246,7 +268,7 @@ Public Class Form2
     End Sub
 
     Private Sub treenav_DoubleClick(sender As Object, e As EventArgs) Handles treenav.DoubleClick
-       
+
     End Sub
 
     Private Sub treenav_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles treenav.AfterSelect
@@ -270,16 +292,12 @@ Public Class Form2
         End If
     End Sub
 
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
-        If txtpass.Text.ToUpper = "HOLAMUNDO" Then
-            Panel1.Hide()
-        Else
-            MsgBox("Password Erroneo!!")
-        End If
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs)
+
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class

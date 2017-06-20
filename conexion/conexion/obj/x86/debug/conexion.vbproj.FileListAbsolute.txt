@@ -111,3 +111,4 @@ C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.exe.manifest
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.application
 C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.CuadroDeLiquidaion.resources
+C:\Users\e-ahernandezc\Desktop\conexion\conexion\conexion\obj\x86\Debug\conexion.loginUntil.resources

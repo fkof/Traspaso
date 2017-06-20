@@ -774,7 +774,7 @@ Public Class Form1
     End Sub
 
     Private Sub UntilToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UntilToolStripMenuItem.Click
-        Form2.Show()
+        loginUntil.Show()
     End Sub
 
     Private Sub BorrarTraspasoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BorrarTraspasoToolStripMenuItem.Click

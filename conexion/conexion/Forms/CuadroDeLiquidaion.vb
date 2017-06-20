@@ -13,16 +13,19 @@
 
     End Sub
 End Class
-Public Class paramsseahr
+<Serializable()> Public Class paramsseahr
+    Private _Referencia As String
+
+
     Public Property Referencia As String
         Get
-            Return Referencia
+            Return _Referencia
         End Get
         Set(ByVal value As String)
-            If Referencia = value Then
+            If _Referencia = value Then
                 Return
             End If
-            Referencia = value
+            _Referencia = value
         End Set
     End Property
 
