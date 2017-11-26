@@ -54,7 +54,7 @@ conexion
  <returns>si regresa un true es que NO existe la factura</returns>
  <remarks></remarks>
 </member>
-<member name="M:conexion.ClsEncFactura.creafactura(conexion.ClsEncFactura)">
+<member name="M:conexion.ClsEncFactura.creafactura(conexion.FacturaDTO)">
  <summary>
  Crea El Registro del Encabezado de La Factura
  </summary>
@@ -62,7 +62,7 @@ conexion
  <returns></returns>
  <remarks></remarks>
 </member>
-<member name="M:conexion.ClsEncFactura.creafacturarem(conexion.ClsEncFactura)">
+<member name="M:conexion.ClsEncFactura.creafacturarem(conexion.FacturaDTO)">
  <summary>
  Crea factura de remesas
  </summary>

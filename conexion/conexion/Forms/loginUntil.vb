@@ -9,7 +9,7 @@
     ' such as the username, display name, etc.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        If PasswordTextBox.Text.ToUpper = "HOLAMUNDO" AndAlso UsernameTextBox.Text.ToUpper = "FKOF" Then
+        If PasswordTextBox.Text.ToUpper = "" AndAlso UsernameTextBox.Text.ToUpper = "FKOF" Then
             Dim until As New Form2
             until.Show()
         Else

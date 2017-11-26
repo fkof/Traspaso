@@ -7,132 +7,32 @@ Public Class Form2
     Dim isString As Boolean
     Private Sub txtconsulta_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtconsulta.KeyDown
         Dim I As Integer
-        Dim cadena As String = txtconsulta.Text
+        txtconsulta.SelectionColor = Color.Red
         If txtconsulta.Text <> "" Then
             If e.KeyCode = 32 Then
+                Dim COMIENZO As New Integer
+                COMIENZO = txtconsulta.SelectionStart
+                Label2.Text = COMIENZO
+                Buscar_Coincidencia("SELECT", txtconsulta, Color.Blue, Color.White)
+                Buscar_Coincidencia("FROM", txtconsulta, Color.Blue, Color.White)
+                Buscar_Coincidencia("where", txtconsulta, Color.Blue, Color.White)
+                Buscar_Coincidencia("ORDER BY", txtconsulta, Color.Blue, Color.White)
+                Buscar_Coincidencia("HAVING", txtconsulta, Color.Blue, Color.White)
+                txtconsulta.SelectionStart = COMIENZO
 
-                '   Buscar_Coincidencia("SELECT", txtconsulta, Color.Blue, Color.Red)
-                '  Buscar_Coincidencia("FROM", txtconsulta, Color.Blue, Color.Red)
 
-                'For I = 0 To txtconsulta.TextLength - 6
-                '    If cadena.Substring(I, 6) = "SELECT" Then
-                '        txtconsulta.Select(I, 6)
-                '        txtconsulta.SelectionColor = Color.Red
-                '        I = I + 1
-                '    End If
-                'Next
-                'For I = 0 To txtconsulta.TextLength - 8
-                '    If cadena.Substring(I, 8) = "function" Then
-                '        txtconsulta.Select(I, 8)
-                '        txtconsulta.SelectionColor = Color.Red
-                '        I = I + 1
-                '    End If
-                'Next
+
             End If
         End If
     End Sub
 
     Private Sub txtconsulta_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtconsulta.KeyPress
-        Dim text_query As String = ""
-        text_query = txtconsulta.Text
-        txtconsulta.Text = ""
-        'If e.KeyChar = "'" Then
-        '    isString = True
-        'End If
-        'If txtconsulta.Text <> "" Then
 
-
-
-
-        'Dim COMIENZO As Integer = txtconsulta.SelectionStart()
-        'Dim cadena As String = txtconsulta.Text
-        'For I = 0 To txtconsulta.TextLength - 6
-        '    If UCase(cadena.Substring(I, 6)) = "SELECT" Then
-        '        txtconsulta.Select(I, 6)
-        '        txtconsulta.SelectionColor = Color.SteelBlue
-        '        txtconsulta.SelectionFont = New Font("Tahoma", 12, FontStyle.Bold)
-        '        txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
-        '        If isString Then
-        '            txtconsulta.SelectionColor = Color.Red
-        '        Else
-        '            txtconsulta.SelectionColor = Color.Black
-        '            isString = False
-        '        End If
-        '        I = I + 1
-        '    End If
-        'Next
-
-
-        'For I = 0 To txtconsulta.TextLength - 4
-        '    If UCase(cadena.Substring(I, 4)) = "FROM" Then
-        '        txtconsulta.Select(I, 4)
-        '        txtconsulta.SelectionColor = Color.SteelBlue
-        '        txtconsulta.Select(txtconsulta.Text.Length(), txtconsulta.Text.Length())
-        '        If isString Then
-        '            txtconsulta.SelectionColor = Color.Red
-        '        Else
-        '            txtconsulta.SelectionColor = Color.Black
-        '            isString = False
-        '        End If
-        '        I = I + 1
-        '    End If
-        'Next
-
-        'For I = 0 To txtconsulta.TextLength - 5
-        '    If UCase(cadena.Substring(I, 5)) = "WHERE" Then
-        '        txtconsulta.Select(I, 5)
-        '        txtconsulta.SelectionColor = Color.SteelBlue
-        '        txtconsulta.Select(txtconsulta.TextLength, txtconsulta.TextLength)
-        '        If isString Then
-        '            txtconsulta.SelectionColor = Color.Red
-        '        Else
-        '            txtconsulta.SelectionColor = Color.Black
-        '            isString = False
-        '        End If
-        '        I = I + 1
-        '    End If
-        'Next
-
-        'If e.KeyChar = "'" Then
-        '    If isString Then
-        '        txtconsulta.SelectionColor = Color.Black
-        '        isString = False
-        '    Else
-        '        txtconsulta.SelectionColor = Color.Red
-        '        isString = True
-        '    End If
-        'End If
-
-        'txtconsulta.SelectionStart = COMIENZO
 
     End Sub
 
     Private Sub txtconsulta_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtconsulta.KeyUp
-        Dim text_query As String = ""
-        text_query = txtconsulta.Text
-        txtconsulta.Text = ""
-        'If e.KeyChar = "'" Then
-        '    isString = True
-        'End If
-        'If txtconsulta.Text <> "" Then
 
-        Dim listwords As String()
-        listwords = text_query.Split(" ")
-
-        For index = 0 To listwords.Length - 1
-            Dim word As String = listwords(index)
-            If word.ToUpper = "SELECT" Then
-                txtconsulta.ForeColor = Color.BlueViolet
-                txtconsulta.Text += word
-                txtconsulta.ForeColor = Color.Red
-            End If
-            txtconsulta.Text += word
-        Next
-        If e.KeyCode = 32 Then
-
-
-
-        End If
     End Sub
     Private Sub Buscar_Coincidencia(ByVal pattern As String, ByVal RichTextBox As RichTextBox, ByVal cColor As Color, ByVal BackColor As Color)
         Dim Resultados As MatchCollection
@@ -145,13 +45,13 @@ Public Class Form2
             ' Ejecutar el método Matches para buscar la cadena en el texto del control  
             ' y retornar un MatchCollection con los resultados  
             Resultados = obj_Expresion.Matches(RichTextBox.Text)
-
+            Label2.Text = RichTextBox.Text
             ' quitar el coloreado anterior  
-            With RichTextBox
-                .SelectAll()
-                .SelectionColor = Color.Black
+            'With RichTextBox
+            '    .SelectAll()
+            '    .SelectionColor = Color.Black
 
-            End With
+            'End With
 
             ' Si se encontraron coincidencias recorre las colección    
             For Each Palabra In Resultados
@@ -160,11 +60,12 @@ Public Class Form2
                     .SelectionLength = Palabra.Length ' longitud de la cadena a seleccionar  
                     .SelectionColor = cColor ' color de la selección  
                     .SelectionBackColor = BackColor
-                    .Text = Palabra.Value
+                    '  .Text = Palabra.Value
                     '   Debug.Print(Palabra.Value)
                 End With
             Next Palabra
 
+            '  txtconsulta.ForeColor = Color.Black
         Catch ex As Exception
             MsgBox(ex.Message.ToString)
         End Try
@@ -236,9 +137,7 @@ Public Class Form2
 
             For Each drc As DataRow In dtcampos.Rows
                 Dim node1 As New TreeNode(drc(0).ToString())
-
                 listacampos.Add(node1)
-
             Next
 
             Dim treeNode As TreeNode = New TreeNode(dr(0).ToString().Trim, listacampos.ToArray())

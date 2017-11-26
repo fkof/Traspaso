@@ -1,8 +1,10 @@
 ﻿
 Public Class Remesas
     Dim objProc As New ClsProcesos
-    Dim objEnFac As New ClsEncFactura
-    Dim objpartidas As New ClsFacturaPartidas
+    Dim objEnFac As New FacturaDTO
+    Dim objEnFac2 As New ClsEncFactura
+    Dim objpartidas As New PartidasDTO
+    Dim objpartidas2 As New ClsFacturaPartidas
     Dim objpedimento As New ClsPedimento
     Dim id_salida As String
     Dim ini As log4net.Config.XmlConfigurator
@@ -143,7 +145,7 @@ Public Class Remesas
 
                             ' If objEnFac.validafactura(txtpedimento.Text, objEnFac.CveProv, objEnFac.NoFac) Then
                             'insertar encabezado de factura
-                            If objEnFac.creafacturarem(objEnFac) Then
+                            If objEnFac2.creafacturarem(objEnFac) Then
                                 PartidasFactura(objEnFac.IdAccess, objEnFac.Consec)
 
                                 objEnFac.PES_BRUT = 0
@@ -254,14 +256,14 @@ Public Class Remesas
             objpartidas.Marca = IIf(IsDBNull(drparti("Marca")), "", drparti("Marca"))
             objpartidas.Modelo = IIf(IsDBNull(drparti("Modelo")), "", drparti("Modelo")) ' drparti("Modelo")
             objpartidas.Serie = IIf(IsDBNull(drparti("Serie")), "", drparti("Serie")) ' drparti("Serie")
-            If objpartidas.creapartida(objpartidas) Then
-                '    creaseries(objpartidas.Marca, objpartidas.Modelo, objpartidas.Serie, objpartidas.consecutivoFactura, objpartidas.consecutivo, objpartidas.NoPart)
-                '   insidepar(objEnFac.IdAccess, objpartidas.IdPacc, objpartidas.consecutivoFactura, objpartidas.consecutivo)
-                'cambio la estructura necesito que se mande el id de la factura por que no se de que factura es el identificador o se pone en todas las facturas?
-                'ahi que onda
-            Else
+                If objpartidas2.creapartida(objpartidas) Then
+                    '    creaseries(objpartidas.Marca, objpartidas.Modelo, objpartidas.Serie, objpartidas.consecutivoFactura, objpartidas.consecutivo, objpartidas.NoPart)
+                    '   insidepar(objEnFac.IdAccess, objpartidas.IdPacc, objpartidas.consecutivoFactura, objpartidas.consecutivo)
+                    'cambio la estructura necesito que se mande el id de la factura por que no se de que factura es el identificador o se pone en todas las facturas?
+                    'ahi que onda
+                Else
 
-            End If
+                End If
             consecpartida = consecpartida + 1
 
         Next

@@ -5,8 +5,10 @@ Imports System.Text
 <Assembly: log4net.Config.XmlConfigurator(Watch:=True)> 
 Public Class Form1
     Dim objProc As New ClsProcesos
-    Dim objEnFac As New ClsEncFactura
-    Dim objpartidas As New ClsFacturaPartidas
+    Dim objEnFac As New FacturaDTO
+    Dim objEnFac2 As New ClsEncFactura
+    Dim objpartidas As New PartidasDTO
+    Dim objpartidas2 As New ClsFacturaPartidas
     Dim objpedimento As New ClsPedimento
     Public id_salida As String
     Private Shared ReadOnly log As log4net.ILog = log4net.LogManager.GetLogger("Principal.vb")
@@ -389,11 +391,11 @@ Public Class Form1
 
             End If
 
-            If objEnFac.validafactura(_objpedimento.Referencia, objEnFac.CveProv, objEnFac.NoFac) Then
+            If objEnFac2.validafactura(_objpedimento.Referencia, objEnFac.CveProv, objEnFac.NoFac) Then
                 'insertar encabezado de factura
                 log.Info("Insercion Factura con el ID: " + objEnFac.IdAccess.ToString)
 
-                If objEnFac.creafactura(objEnFac) Then
+                If objEnFac2.creafactura(objEnFac) Then
                     PartidasFactura(objEnFac.IdAccess, objEnFac.Consec, _objpedimento.Referencia, _objpedimento.ListIdSalida)
                 Else
                     MsgBox("Error al insertar el Encabezado de la factura")
@@ -597,7 +599,7 @@ Public Class Form1
                 objpartidas.Modelo = IIf(IsDBNull(drparti("Modelo")), "", drparti("Modelo")) ' drparti("Modelo")
                 objpartidas.Serie = IIf(IsDBNull(drparti("Serie")), "", drparti("Serie")) ' drparti("Serie")
                 log.Info("se inserta partida " + objpartidas.IdPacc.ToString)
-                If objpartidas.creapartida(objpartidas) Then
+                If objpartidas2.creapartida(objpartidas) Then
                     log.Info("se inserta series #Partida: " + objpartidas.IdPacc.ToString)
                     creaseries(objpartidas.Marca, objpartidas.Modelo, objpartidas.Serie, objpartidas.consecutivoFactura, objpartidas.consecutivo, objpartidas.NoPart, referencia)
                     log.Info("se inserta indentifcadores #Partida:  " + objpartidas.IdPacc.ToString)
