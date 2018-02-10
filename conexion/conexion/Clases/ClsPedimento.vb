@@ -478,6 +478,14 @@
         Dim objclspedimento As New ClsPedimento
         Dim objProc As New ClsProcesos
 
+
+        Dim Consulta_valsegdll As New StringBuilder
+
+        Consulta_valsegdll.AppendLine("SELECT SUM(IMP_INCR) FROM SAAIO_INCREM ")
+        Consulta_valsegdll.AppendLine(String.Format("WHERE CVE_INCR IN (4,6) AND NUM_REFE = '{0}'", params.Referencia))
+
+
+
         Dim consulta As New StringBuilder
         consulta.AppendLine("SELECT TOT_IMPU AS SUMA ,CVE_IMPU")
         consulta.AppendLine("FROM SAAIO_CONTPED")

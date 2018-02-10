@@ -5,25 +5,16 @@ Imports System.Text
 Public Class Form2
     Dim objsql As New ClsProcesos
     Dim isString As Boolean
+    Dim sCmd As FbCommand
+    Dim sqltablas As New StringBuilder
+    Dim sqlcampostablas As New StringBuilder
+    Dim i As Integer
+    Dim dttablas As New Data.DataTable
+    Dim dtcampos As New Data.DataTable
+    Dim ArbolHijo As New List(Of TreeNode)
+    Dim listacampos As New List(Of TreeNode)
     Private Sub txtconsulta_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtconsulta.KeyDown
-        Dim I As Integer
-        txtconsulta.SelectionColor = Color.Red
-        If txtconsulta.Text <> "" Then
-            If e.KeyCode = 32 Then
-                Dim COMIENZO As New Integer
-                COMIENZO = txtconsulta.SelectionStart
-                Label2.Text = COMIENZO
-                Buscar_Coincidencia("SELECT", txtconsulta, Color.Blue, Color.White)
-                Buscar_Coincidencia("FROM", txtconsulta, Color.Blue, Color.White)
-                Buscar_Coincidencia("where", txtconsulta, Color.Blue, Color.White)
-                Buscar_Coincidencia("ORDER BY", txtconsulta, Color.Blue, Color.White)
-                Buscar_Coincidencia("HAVING", txtconsulta, Color.Blue, Color.White)
-                txtconsulta.SelectionStart = COMIENZO
 
-
-
-            End If
-        End If
     End Sub
 
     Private Sub txtconsulta_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtconsulta.KeyPress
@@ -45,7 +36,6 @@ Public Class Form2
             ' Ejecutar el método Matches para buscar la cadena en el texto del control  
             ' y retornar un MatchCollection con los resultados  
             Resultados = obj_Expresion.Matches(RichTextBox.Text)
-            Label2.Text = RichTextBox.Text
             ' quitar el coloreado anterior  
             'With RichTextBox
             '    .SelectAll()
@@ -103,14 +93,7 @@ Public Class Form2
 
     End Sub
     Function getdatabaseinfo() As List(Of TreeNode)
-        Dim sCmd As FbCommand
-        Dim sqltablas As New StringBuilder
-        Dim sqlcampostablas As New StringBuilder
-        Dim i As Integer
-        Dim dttablas As New Data.DataTable
-        Dim dtcampos As New Data.DataTable
-        Dim ArbolHijo As New List(Of TreeNode)
-        Dim listacampos As New List(Of TreeNode)
+
 
         sqltablas.AppendLine("SELECT RDB$RELATION_NAME")
         sqltablas.AppendLine("FROM RDB$RELATIONS")
@@ -198,5 +181,64 @@ Public Class Form2
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
+    End Sub
+
+    Private Sub txttable_Leave(sender As Object, e As EventArgs) Handles txttable.Leave
+
+    End Sub
+
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        ' Create a SaveFileDialog to request a path and file name to save to.
+        Dim saveFile1 As New SaveFileDialog()
+
+        ' Initialize the SaveFileDialog to specify the RTF extension for the file.
+        saveFile1.DefaultExt = "*.txt"
+        saveFile1.Filter = "RTF Files|*.txt"
+
+        ' Determine if the user selected a file name from the saveFileDialog.
+        If (saveFile1.ShowDialog() = System.Windows.Forms.DialogResult.OK) _
+            And (saveFile1.FileName.Length) > 0 Then
+
+            ' Save the contents of the RichTextBox into the file.
+            txtconsulta.SaveFile(saveFile1.FileName,
+                RichTextBoxStreamType.PlainText)
+        End If
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        ' Create an OpenFileDialog to request a file to open.
+        Dim openFile1 As New OpenFileDialog()
+
+        ' Initialize the OpenFileDialog to look for RTF files.
+        openFile1.DefaultExt = "*.txt"
+        openFile1.Filter = "RTF Files|*.txt"
+
+        ' Determine whether the user selected a file from the OpenFileDialog.
+        If (openFile1.ShowDialog() = System.Windows.Forms.DialogResult.OK) _
+            And (openFile1.FileName.Length > 0) Then
+
+            ' Load the contents of the file into the RichTextBox.
+            txtconsulta.Text = My.Computer.FileSystem.ReadAllText(openFile1.FileName)
+        End If
+    End Sub
+
+    Private Sub txtconsulta_Leave(sender As Object, e As EventArgs) Handles txtconsulta.Leave
+        Dim I As Integer
+        txtconsulta.SelectionColor = Color.Red
+        If txtconsulta.Text <> "" Then
+
+            Dim COMIENZO As New Integer
+            COMIENZO = txtconsulta.SelectionStart
+
+            Buscar_Coincidencia("SELECT", txtconsulta, Color.Blue, Color.White)
+            Buscar_Coincidencia("FROM", txtconsulta, Color.Blue, Color.White)
+            Buscar_Coincidencia("where", txtconsulta, Color.Blue, Color.White)
+            Buscar_Coincidencia("ORDER BY", txtconsulta, Color.Blue, Color.White)
+            Buscar_Coincidencia("HAVING", txtconsulta, Color.Blue, Color.White)
+            txtconsulta.SelectionStart = COMIENZO
+
+
+
+        End If
     End Sub
 End Class

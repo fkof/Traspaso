@@ -2,6 +2,6 @@
   <usuario>SYSDBA</usuario>
   <password>masterkey</password>
   <servidor>E-AHERNANDEZC</servidor>
-  <rutafb>C:\Users\e-ahernandezc\Documents\Traspaso 2.0\CASA.GDB</rutafb>
+  <rutafb>C:\covos2.0\CASA.GDB</rutafb>
   <rutaacc>C:\Users\e-ahernandezc\Documents\base2016.accdb</rutaacc>
 </CONEXION>
