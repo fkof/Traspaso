@@ -295,6 +295,46 @@ Public Class ClsProcesos
             Conexion.Close()
         End Try
     End Function
+    Public Function ejecutaQueryAcces(ByVal query As String) As Boolean
+        Try
+            Dim cmd As OleDb.OleDbCommand
+            closeacc()
+            conectaracc()
+            cmd = New OleDb.OleDbCommand(query, conec)
+            cmd.ExecuteNonQuery()
+            Return True
+        Catch ex As Exception
+            MsgBox("Error: ", ex.Message)
+            log.Info(query)
+
+            log.Error(quitarSaltosLinea(ex.Message, ""))
+            log.Fatal(quitarSaltosLinea(ex.StackTrace, ""))
+            Form1.TextBox1.Text = Form1.TextBox1.Text + "****Ejecuta Query*****" + vbCrLf + query + vbCrLf + ex.Message + vbCrLf
+            Form1.TextBox1.Visible = True
+            ' ''trans.Rollback()
+            ' ''Throw ex.InnerException
+            Return False
+        Finally
+            Conexion.Close()
+        End Try
+    End Function
+    Public Function executescalar(ByVal query) As String
+        Try
+            Dim cmd As FbCommand
+
+            closefb()
+            conectarfb()
+            cmd = New FbCommand(query, Conexion)
+            Dim count As String = Convert.ToString(cmd.ExecuteScalar())
+            closefb()
+            Return count
+        Catch ex As Exception
+            closefb()
+            MsgBox("Can not open connection ! ")
+        End Try
+
+        Return ""
+    End Function
 End Class
 
 

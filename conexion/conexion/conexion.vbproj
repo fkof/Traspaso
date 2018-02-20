@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DTO\CuadroLiquidacionDTO.vb" />
     <Compile Include="DTO\FacturaDTO.vb" />
     <Compile Include="DTO\PartidasDTO.vb" />
     <Compile Include="Forms\Borrado.Designer.vb">

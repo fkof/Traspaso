@@ -343,7 +343,7 @@
         End Set
     End Property
 #End Region
-
+    Dim objCPedimento As New CuadroLiquidacionDTO
     Function creaembarque(ByVal objpedimento As ClsPedimento) As Boolean
         Dim objfb As New ClsProcesos
         Dim consulta As String = String.Format("INSERT INTO CTRAO_EMBAR (NUM_REFE , IMP_EXPO , ADU_DESP , PAT_AGEN , CVE_PEDI, ADU_ENTR, FEC_ENTR,CVE_CAPT,CVE_IMPO,APE_REFE,SEC_DESP,IMP_FLET,IMP_SEGU,IMP_EMBA,IMP_OTRO,INC_FLET,INC_SEGU,INC_EMBA,INC_OTRO,MON_GUIA,MAR_NUME,PES_BRUT,CAN_BULT,tip_bult,des_orig)  " &
@@ -474,17 +474,55 @@
 
         Return objpedimento
     End Function
-    Function getCuadroLiquidacion(ByVal params As Object) As DataTable
+    Function getCuadroLiquidacion(ByVal params As Object) As CuadroLiquidacionDTO
         Dim objclspedimento As New ClsPedimento
         Dim objProc As New ClsProcesos
-
-
-        Dim Consulta_valsegdll As New StringBuilder
+        Dim Consulta_valsegdll, ConsulPedimeData, vehiculosData As New StringBuilder
+        Dim dtPedimentoData, dtvehiculosData As New DataTable
 
         Consulta_valsegdll.AppendLine("SELECT SUM(IMP_INCR) FROM SAAIO_INCREM ")
         Consulta_valsegdll.AppendLine(String.Format("WHERE CVE_INCR IN (4,6) AND NUM_REFE = '{0}'", params.Referencia))
 
+        Dim valsegdll As Decimal = Convert.ToDecimal(objProc.executescalar(Consulta_valsegdll.ToString()))
+        objCPedimento.Otros = valsegdll
 
+        Dim primerrowselect As String
+        primerrowselect = String.Format("SELECT mon_vase AS VALOR_ASEGURADO,round((({0})* TIP_CAMB)) as regalias,CAN_BULT", valsegdll)
+        ConsulPedimeData.AppendLine(primerrowselect)
+        ConsulPedimeData.AppendLine(",TIP_PEDI as R1, REG_ADUA as Regimen, FEC_PAGO as fechapago")
+        ConsulPedimeData.AppendLine(",NUM_PEDIO AS PedimentoOriginal,FIR_REME AS Remesa")
+        ConsulPedimeData.AppendLine(",PES_BRUT as PESO, NUM_PEDI AS NOPEDIMENTO")
+        ConsulPedimeData.AppendLine("FROM SAAIO_PEDIME")
+        ConsulPedimeData.AppendLine(String.Format("WHERE NUM_REFE = '{0}'", params.Referencia))
+
+        dtPedimentoData = objProc.llenaDataSet(ConsulPedimeData.ToString(), "FB")
+        For Each datapedi As DataRow In dtPedimentoData.Rows
+            objCPedimento.valAsegurado = datapedi("VALOR_ASEGURADO")
+            objCPedimento.Regalias = datapedi("regalias")
+            objCPedimento.Bultos = datapedi("CAN_BULT")
+            If IsDBNull(datapedi("R1")) = False Then
+                objCPedimento.Rectificado = IIf(datapedi("R1") = "R1", True, False)
+                objCPedimento.PedimentoOriginal = IIf(IsDBNull(datapedi("PedimentoOriginal")) = False, datapedi("PedimentoOriginal"), "")
+                objCPedimento.NoPediRectificado = datapedi("NOPEDIMENTO")
+                objCPedimento.Rectificador = True
+            End If
+            objCPedimento.Consolidado = IIf(IsDBNull(datapedi("Remesa")), False, True)
+
+            objCPedimento.Regimen = datapedi("Regimen")
+            objCPedimento.FechaPago = datapedi("fechapago")
+
+        Next
+
+        vehiculosData.AppendLine("SELECT NUM_CONT AS NumVehiculo,CVE_CONT AS tipo")
+        vehiculosData.AppendLine("FROM SAAIO_CONTEN")
+        vehiculosData.AppendLine(String.Format("WHERE NUM_REFE = '{0}'", params.Referencia))
+
+        dtvehiculosData = objProc.llenaDataSet(vehiculosData.ToString(), "FB")
+        For Each datavehi As DataRow In dtvehiculosData.Rows
+            objCPedimento.NumVehiculo = datavehi("NumVehiculo")
+            objCPedimento.TipoVehiculo = datavehi("tipo")
+        Next
+        Dim datos As New List(Of Object)
 
         Dim consulta As New StringBuilder
         consulta.AppendLine("SELECT TOT_IMPU AS SUMA ,CVE_IMPU")
@@ -498,9 +536,39 @@
 
         Dim dt As New DataTable
         dt = objProc.llenaDataSet(consulta.ToString(), "FB")
+
+        For Each cuadro As DataRow In dt.Rows
+            If (cuadro("CVE_IMPU") = 1) Then
+                objCPedimento.DTA = cuadro("SUMA")
+            End If
+            If cuadro("CVE_IMPU") = 15 Then
+                objCPedimento.CC = cuadro("SUMA")
+            End If
+            If cuadro("CVE_IMPU") = 6 Then
+                objCPedimento.IGIOIGE = cuadro("SUMA")
+            End If
+            If cuadro("CVE_IMPU") = 3 Then
+                objCPedimento.IVA = cuadro("SUMA")
+            End If
+        Next
         ' MessageBox.Show("alerta" + params.Parametro1)
         ' MessageBox.Show("alertaw" + params.Parametro2)
-        Return dt
+        Return objCPedimento
     End Function
+    Public Function Insertacuadroliquidacion(ByVal dtoCuadroLiquidacion As CuadroLiquidacionDTO) As Boolean
+        Try
+            Dim consulta As StringBuilder
+            consulta.AppendLine("insert into  [Pedimentos 5001 Encabezado]")
+            consulta.Append("()")
+            consulta.AppendLine("values ")
 
+            consulta = String.Format("insert into saaio_increm values('{0}','{1}','{2}','USD')", objpedimento.Referencia, "1", objpedimento.Fletes)
+                objfb.ejecutaQuery(consulta)
+            End If
+        Catch ex As Exception
+            Throw New Exception("No se pasaron los Incremetables")
+        End Try
+
+        Return True
+    End Function
 End Class

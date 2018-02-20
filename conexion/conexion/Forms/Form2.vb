@@ -241,4 +241,21 @@ Public Class Form2
 
         End If
     End Sub
+
+    Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
+        Clipboard.Clear()
+        Clipboard.SetText(txtconsulta.Text)
+        txtconsulta.Focus()
+    End Sub
+
+    Private Sub PasteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PasteToolStripMenuItem.Click
+        txtconsulta.Text = txtconsulta.Text + Clipboard.GetText()
+
+    End Sub
+
+    Private Sub CutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CutToolStripMenuItem.Click
+        Clipboard.SetText(txtconsulta.Text)
+        txtconsulta.Text = ""
+        txtconsulta.Focus()
+    End Sub
 End Class
