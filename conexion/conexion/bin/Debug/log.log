@@ -752,3 +752,41 @@ where num_refe = "8002024" -
 FROM SAAIO_PEDIME
 where num_refe = "8002024" - 
 2018-02-20 10:28:23,835 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\Public\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2018-02-25 23:38:46,695 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 5, column 125SAAIO_PEDIME - 
+2018-02-25 23:38:46,752 | INFO  | ClsProcesos.vb | SELECT mon_vase AS VALOR_ASEGURADO,round(((50875.73)* TIP_CAMB)) as regalias,CAN_BULT
+,TIP_PEDI as R1, REG_ADUA as Regimen, FEC_PAGO as fechapago
+,NUM_PEDIO AS PedimentoOriginal,FIR_REME AS Remesa
+,PES_BRUT as PESO, NUM_PEDI AS NOPEDIMENTO
+,val_dlls as VALORDLL,Vall_norm as valorAduana,Val_come as valorcomercial,round(Val_come/TIP_CAMB) as valorcomercialdllFROM SAAIO_PEDIME
+WHERE NUM_REFE = '8002024'
+ - 
+2018-02-25 23:38:46,807 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\Public\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2018-02-25 23:40:18,452 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 5, column 125SAAIO_PEDIME - 
+2018-02-25 23:40:18,453 | INFO  | ClsProcesos.vb | SELECT mon_vase AS VALOR_ASEGURADO,round(((50875.73)* TIP_CAMB)) as regalias,CAN_BULT
+,TIP_PEDI as R1, REG_ADUA as Regimen, FEC_PAGO as fechapago
+,NUM_PEDIO AS PedimentoOriginal,FIR_REME AS Remesa
+,PES_BRUT as PESO, NUM_PEDI AS NOPEDIMENTO
+,val_dlls as VALORDLL,Vall_norm as valorAduana,Val_come as valorcomercial,round(Val_come/TIP_CAMB) as valorcomercialdllFROM SAAIO_PEDIME
+WHERE NUM_REFE = '8002024'
+ - 
+2018-02-25 23:40:18,454 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\Public\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2018-02-25 23:42:25,138 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -104Token unknown - line 5, column 124SAAIO_PEDIME - 
+2018-02-25 23:42:25,151 | INFO  | ClsProcesos.vb | SELECT mon_vase AS VALOR_ASEGURADO,round(((50875.73)* TIP_CAMB)) as regalias,CAN_BULT
+,TIP_PEDI as R1, REG_ADUA as Regimen, FEC_PAGO as fechapago
+,NUM_PEDIO AS PedimentoOriginal,FIR_REME AS Remesa
+,PES_BRUT as PESO, NUM_PEDI AS NOPEDIMENTO
+,val_dlls as VALORDLL,Val_norm as valorAduana,Val_come as valorcomercial,round(Val_come/TIP_CAMB) as valorcomercialdllFROM SAAIO_PEDIME
+WHERE NUM_REFE = '8002024'
+ - 
+2018-02-25 23:42:25,189 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\Public\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 
+2018-02-25 23:43:36,902 | ERROR | ClsProcesos.vb | Dynamic SQL ErrorSQL error code = -206Column unknownFPEA_IMPUAt line 6, column 1 - 
+2018-02-25 23:43:36,916 | INFO  | ClsProcesos.vb | SELECT TOT_IMPU AS SUMA ,CVE_IMPU, FPA_IMPU
+FROM SAAIO_CONTPED
+WHERE NUM_REFE='8002024'
+UNION
+SELECT SUM(TOT_IMPU) AS SUMA,CVE_IMPU,FPEA_IMPU
+FROM SAAIO_CONTFRA 
+WHERE NUM_REFE='8002024'
+GROUP BY CVE_IMPU,FPA_IMPU
+ - 
+2018-02-25 23:43:36,921 | FATAL | ClsProcesos.vb |    at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteReader(CommandBehavior behavior)   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteDbDataReader(CommandBehavior behavior)   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)   at conexion.ClsProcesos.llenaDataSet(String query, String bd) in C:\Users\Public\conexion\conexion\conexion\Clases\ClsProcesos.vb:line 232 - 

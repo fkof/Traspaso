@@ -44,7 +44,7 @@ Partial Class CuadroDeLiquidaion
         Me.txtReferencia.Name = "txtReferencia"
         Me.txtReferencia.Size = New System.Drawing.Size(100, 20)
         Me.txtReferencia.TabIndex = 17
-        Me.txtReferencia.Text = "17"
+        Me.txtReferencia.Text = "Referencia...."
         '
         'btnBuscar
         '
@@ -60,19 +60,22 @@ Partial Class CuadroDeLiquidaion
         Me.dgvCuadro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCuadro.Location = New System.Drawing.Point(15, 84)
         Me.dgvCuadro.Name = "dgvCuadro"
-        Me.dgvCuadro.Size = New System.Drawing.Size(282, 218)
+        Me.dgvCuadro.Size = New System.Drawing.Size(282, 52)
         Me.dgvCuadro.TabIndex = 22
+        Me.dgvCuadro.Visible = False
         '
         'CuadroDeLiquidaion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(309, 317)
+        Me.ClientSize = New System.Drawing.Size(309, 142)
         Me.Controls.Add(Me.dgvCuadro)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtReferencia)
         Me.Controls.Add(Me.btnBuscar)
+        Me.MaximizeBox = False
         Me.Name = "CuadroDeLiquidaion"
+        Me.ShowIcon = False
         Me.Text = "Cuadro de liquidacion"
         CType(Me.dgvCuadro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
